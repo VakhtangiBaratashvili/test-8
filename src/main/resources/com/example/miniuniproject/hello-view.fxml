@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniuniproject.Controller">
+   <children>
+      <TableView fx:id="table" layoutY="54.0" onSort="#updateTableView" prefHeight="454.0" prefWidth="656.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="150.39996337890625" text="ID" />
+          <TableColumn fx:id="firstNameColumn" prefWidth="135.0" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="135.0" text="Last name" />
+            <TableColumn fx:id="genderColumn" prefWidth="108.79998779296875" text="Gender" />
+            <TableColumn fx:id="facultyColumn" prefWidth="124.7999267578125" text="Faculty" />
+        </columns>
+      </TableView>
+      <Button fx:id="addBtn" layoutX="337.0" layoutY="14.0" mnemonicParsing="false" onAction="#addStudent" text="Add Student" />
+      <Button fx:id="updateBtn" layoutX="434.0" layoutY="14.0" mnemonicParsing="false" onAction="#updateStudent" text="Update Student" />
+      <Button fx:id="deleteBtn" layoutX="546.0" layoutY="14.0" mnemonicParsing="false" onAction="#deleteStudent" text="Delete Student" />
+      <TextField fx:id="searchField" layoutX="14.0" layoutY="14.0" promptText="Search" />
+      <Button fx:id="searchById" layoutX="164.0" layoutY="14.0" mnemonicParsing="false" onAction="#searchStudent" text="Search" />
+   </children>
+</AnchorPane>
